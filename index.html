@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="brand">Your Name</div>
+    <ul class="nav-links">
+      <li><a href="#hero" class="active">Home</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#personal-projects">Personal</a></li>
+      <li><a href="#school-projects">School</a></li>
+      <li><a href="#thesis">Thesis</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="menu-btn" aria-label="toggle menu">☰</button>
+  </nav>
+
+  <main>
+    <header id="hero" class="section center">
+      <div class="hero-inner">
+        <img src="assets/hero.svg" alt="hero" class="hero-img" />
+        <div class="hero-text">
+          <h1 class="typing">Hi, I'm Your Name</h1>
+          <p class="subtitle">Web Developer — building accessible, performant interfaces.</p>
+          <div class="cta">
+            <a href="#contact" class="btn">Hire me</a>
+            <a href="#personal-projects" class="btn ghost">See projects</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="education" class="section container fade-in">
+      <h2>Education</h2>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>B.S. Computer Science</h3>
+            <p class="muted">University Name • 2019 — 2023</p>
+          </div>
+          <div class="card-back">
+            <p>Graduated with honors — focus on web development, accessibility, and UX.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="personal-projects" class="section container fade-in">
+      <h2>Personal Projects</h2>
+      <div class="grid">
+        <article class="project card flip-card">
+          <div class="flip-inner">
+            <div class="front">
+              <img src="assets/project1.svg" alt="">
+              <h3>Portfolio Website</h3>
+              <p>Static responsive portfolio with animations.</p>
+            </div>
+            <div class="back">
+              <p>HTML, CSS, JS — deployed on GitHub Pages. Features: responsive layout, animations, accessibility improvements.</p>
+              <a class="small-btn" href="#">Live</a>
+              <a class="small-btn" href="#">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project card flip-card">
+          <div class="flip-inner">
+            <div class="front">
+              <img src="assets/project2.svg" alt="">
+              <h3>Weather App</h3>
+              <p>Fetches OpenWeather API and displays forecast</p>
+            </div>
+            <div class="back">
+              <p>Vanilla JS, API integration, responsive UI, caching.</p>
+              <a class="small-btn" href="#">Live</a>
+              <a class="small-btn" href="#">Source</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="school-projects" class="section container fade-in">
+      <h2>School Projects</h2>
+      <div class="grid">
+        <div class="card flip-card">
+          <div class="flip-inner">
+            <div class="front">
+              <img src="assets/school.svg" alt="">
+              <h3>Library Management</h3>
+              <p>Inventory, borrow/return tracking, reporting dashboard.</p>
+            </div>
+            <div class="back">
+              <p>Built with PHP + MySQL for coursework; focused on reliability and clean UI.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="thesis" class="section container fade-in">
+      <h2>Thesis</h2>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="assets/thesis.svg" alt="">
+            <h3>Smart Campus Navigation</h3>
+            <p class="muted">Indoor navigation with floor mapping and POIs</p>
+          </div>
+          <div class="card-back">
+            <p>Mobile-first prototype using beacon-assisted positioning and map overlays.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section container fade-in">
+      <h2>Certifications</h2>
+      <div class="grid">
+        <div class="card flip-card">
+          <div class="flip-inner">
+            <div class="front">
+              <img src="assets/cert.svg" alt="">
+              <h3>Google UX Design</h3>
+              <p>2024</p>
+            </div>
+            <div class="back">
+              <p>UX principles, wireframing, prototyping, and usability testing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section container fade-in">
+      <h2>Skills</h2>
+      <div class="skills-wrap">
+        <div class="skill-bubble" style="--i:0">HTML</div>
+        <div class="skill-bubble" style="--i:1">CSS</div>
+        <div class="skill-bubble" style="--i:2">JavaScript</div>
+        <div class="skill-bubble" style="--i:3">Accessibility</div>
+        <div class="skill-bubble" style="--i:4">React</div>
+        <div class="skill-bubble" style="--i:5">UI/UX</div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container fade-in">
+      <h2>Contact</h2>
+      <div class="card">
+        <form action="mailto:youremail@example.com" method="post" enctype="text/plain" class="contact-form">
+          <label>
+            <span class="label-text">Name</span>
+            <input name="name" required>
+          </label>
+          <label>
+            <span class="label-text">Email</span>
+            <input name="email" type="email" required>
+          </label>
+          <label>
+            <span class="label-text">Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <div class="form-row">
+            <input type="submit" value="Send" class="btn">
+            <a href="assets/resume.pdf" class="btn ghost" download>Download Resume</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="center muted">Built with ❤️ — Ready for GitHub Pages</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
