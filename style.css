@@ -76,3 +76,27 @@ footer{padding:28px 12px;text-align:center;color:var(--muted);font-size:0.95rem}
   .nav-links{display:none;position:absolute;right:18px;top:64px;background:linear-gradient(180deg,rgba(4,10,20,0.95),rgba(2,6,12,0.95));padding:12px;border-radius:8px;border:1px solid var(--glass)}
   .nav-links.show{display:flex;flex-direction:column;gap:8px}
 }
+
+.social-links {
+  text-align: center;
+  padding: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.social-icons a img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1); /* white icons for dark theme */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+  filter: brightness(0.5) invert(0.8) sepia(1) hue-rotate(180deg) saturate(3);
+}
