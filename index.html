@@ -11,9 +11,6 @@
     <div class="brand">John Angelo Tarroza</div>
     <ul class="nav-links">
       <li><a href="#hero" class="active">Home</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#personal-projects">Personal</a></li>
-      <li><a href="#school-projects">School</a></li>
       <li><a href="#thesis">Thesis</a></li>
       <li><a href="#certifications">Certs</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -25,7 +22,7 @@
   <main>
     <header id="hero" class="section center">
       <div class="hero-inner">
-        <img src="assets/hero.svg" alt="hero" class="hero-img" />
+        <img src="assets/profile.jpg" alt="hero" class="hero-img" />
         <div class="hero-text">
           <h1 class="typing">Hi, I'm John Angelo Tarroza</h1>
           <p class="subtitle">Full Stack Developer and Data Analyst — building accessible, performant interfaces. </p>
@@ -53,13 +50,28 @@
       </div>
     </section>
 
+ <section id="skills" class="section container fade-in">
+      <h2>Skills</h2>
+      <div class="skills-wrap">
+        <div class="skill-bubble" style="--i:0">HTML5</div>
+        <div class="skill-bubble" style="--i:1">CSS</div>
+        <div class="skill-bubble" style="--i:2">JavaScript</div>
+        <div class="skill-bubble" style="--i:3">REACT</div>
+        <div class="skill-bubble" style="--i:4">Excel</div>
+        <div class="skill-bubble" style="--i:5">SQL</div>
+        <div class="skill-bubble" style="--i:6">PowerBi</div>
+        <div class="skill-bubble" style="--i:7">Php</div>
+        <div class="skill-bubble" style="--i:8">Python</div>
+      </div>
+    </section>
+
     <section id="personal-projects" class="section container fade-in">
       <h2>Personal Projects</h2>
       <div class="grid">
         <article class="project card flip-card">
           <div class="flip-inner">
             <div class="front">
-              <img src="assets/project1.svg" alt="">
+              <img src="assets/hero.svg" alt="">
               <h3>Portfolio Website</h3>
               <p>Static responsive portfolio with animations.</p>
             </div>
@@ -88,37 +100,91 @@
       </div>
     </section>
 
-    <section id="school-projects" class="section container fade-in">
+     <section id="personal-projects1" class="section container fade-in">
       <h2>School Projects</h2>
       <div class="grid">
-        <div class="card flip-card">
+        <article class="project card flip-card">
           <div class="flip-inner">
             <div class="front">
-              <img src="assets/school.svg" alt="">
-              <h3>Library Management</h3>
-              <p>Inventory, borrow/return tracking, reporting dashboard.</p>
+              <img src="assets/hero.svg" alt="">
+              <h3>Alumni System</h3>
+              <p>Static responsive portfolio with animations.</p>
             </div>
             <div class="back">
-              <p>Built with PHP + MySQL for coursework; focused on reliability and clean UI.</p>
+              <p>HTML, CSS, JS — deployed on GitHub Pages. Features: responsive layout, animations, accessibility improvements.</p>
+              <a class="small-btn" href="#">Live</a>
+              <a class="small-btn" href="#">Source</a>
             </div>
           </div>
-        </div>
+        </article>
+
+        <article class="project card flip-card">
+          <div class="flip-inner">
+            <div class="front">
+              <img src="assets/project2.svg" alt="">
+              <h3>Research Archive</h3>
+              <p>Fetches OpenWeather API and displays forecast</p>
+            </div>
+            <div class="back">
+              <p>Vanilla JS, API integration, responsive UI, caching.</p>
+              <a class="small-btn" href="#">Live</a>
+              <a class="small-btn" href="#">Source</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+     <section id="personal-projects2" class="section container fade-in">
+      <div class="grid">
+        <article class="project card flip-card">
+          <div class="flip-inner">
+            <div class="front">
+              <img src="assets/hero.svg" alt="">
+              <h3>Portfolio Website</h3>
+              <p>Static responsive portfolio with animations.</p>
+            </div>
+            <div class="back">
+              <p>HTML, CSS, JS — deployed on GitHub Pages. Features: responsive layout, animations, accessibility improvements.</p>
+              <a class="small-btn" href="#">Live</a>
+              <a class="small-btn" href="#">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project card flip-card">
+          <div class="flip-inner">
+            <div class="front">
+              <img src="assets/project2.svg" alt="">
+              <h3>Weather App</h3>
+              <p>Fetches OpenWeather API and displays forecast</p>
+            </div>
+            <div class="back">
+              <p>Vanilla JS, API integration, responsive UI, caching.</p>
+              <a class="small-btn" href="#">Live</a>
+              <a class="small-btn" href="#">Source</a>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
+     
+
     <section id="thesis" class="section container fade-in">
       <h2>Thesis</h2>
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="assets/thesis.svg" alt="">
+    <div class="grid">
+        <div class="card flip-card">
+          <div class="flip-inner">
+            <div class="front">
+
             <h3>Enhancing Phishing Detection Accuracy on Social Media through Hybrid NLP-URL Ensemble Learning Algorithms</h3>
-            <p class="muted">proposes designing and developing an AI-powered phishing detection system tailored explicitly for the Facebook platform, focusing on phishing text and URLs. It integrates Natural Language Processing (NLP) algorithms to analyze and classify suspicious content that may appear in Facebook posts, comments, or private communications.</p>
+            <p class="muted">Python, NLP, RoBERT</p>
           </div>
-          <div class="card-back">
-            <p>Mobile-first prototype using beacon-assisted positioning and map overlays.</p>
+          <div class="back">
+            <p>Designed and developed an AI-powered phishing detection system tailored explicitly for the Facebook platform, focusing on phishing text and URLs. It integrates Natural Language Processing (NLP) algorithms to analyze and classify suspicious content that may appear in Facebook posts, comments, or private communications.</p>
           </div>
         </div>
+      </div>
       </div>
     </section>
 
@@ -140,18 +206,6 @@
       </div>
     </section>
 
-    <section id="skills" class="section container fade-in">
-      <h2>Skills</h2>
-      <div class="skills-wrap">
-        <div class="skill-bubble" style="--i:0">HTML</div>
-        <div class="skill-bubble" style="--i:1">CSS</div>
-        <div class="skill-bubble" style="--i:2">JavaScript</div>
-        <div class="skill-bubble" style="--i:3">Accessibility</div>
-        <div class="skill-bubble" style="--i:4">React</div>
-        <div class="skill-bubble" style="--i:5">UI/UX</div>
-      </div>
-    </section>
-
   <section id="contact" class="section container fade-in">
   <h2>Connect with Me</h2>
   <div class="card social-links">
@@ -169,9 +223,6 @@
       <a href="https://facebook.com/your-facebook" target="_blank" aria-label="Facebook">
         <img src="assets/facebook.svg" alt="Facebook Logo">
       </a>
-    </div>
-    <div class="resume-link">
-      <a href="assets/resume.pdf" class="btn ghost" download>Download Resume</a>
     </div>
   </div>
 </section>
